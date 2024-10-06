@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
   display: flex;
@@ -23,22 +23,35 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  max-width: 400px;
 }
 
 .movie-card {
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 300px;
+  width: 100%;
   padding: 1em;
   text-align: center;
   margin: 1em 0;
   transition: transform 0.3s ease, opacity 0.3s ease;
+  position: relative;
 }
 
 .movie-card img {
   width: 100%;
   border-radius: 10px;
+}
+
+.movie-card h3 {
+  margin: 0.5em 0;
+  font-size: 1.5em;
+}
+
+.movie-card p {
+  font-size: 1em;
+  color: #666;
 }
 
 .movie-card.swipe-left {
